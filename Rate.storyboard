@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Esd-Td-eBD">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RateVC-->
+        <scene sceneID="uyw-M7-xJD">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="Esd-Td-eBD" customClass="RateVC" customModule="BirthdayRemover" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hgo-Sz-suk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5co-ry-jOG">
+                                <rect key="frame" x="0.0" y="-812" width="375" height="1624"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZY-NE-ydP">
+                                <rect key="frame" x="47.666666666666657" y="221.33333333333337" width="280" height="180"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="RgG-Nx-UI6">
+                                    <rect key="frame" x="0.0" y="0.0" width="280" height="180"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you like the app?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuk-6c-cwt">
+                                            <rect key="frame" x="31.333333333333329" y="20" width="217.33333333333337" height="23"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="mkS-Vg-Nj0">
+                                            <rect key="frame" x="16" y="67.999999999999972" width="248" height="44"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaB-bX-EMd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="44" id="JIm-jH-HWB"/>
+                                                        <constraint firstAttribute="width" secondItem="vaB-bX-EMd" secondAttribute="height" multiplier="1:1" id="MhQ-gw-glX"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <state key="normal" title="😢"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="22"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="1" green="0.0" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="tappedWithButton:" destination="Esd-Td-eBD" eventType="touchUpInside" id="eFl-yW-1fF"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhd-gs-f2m">
+                                                    <rect key="frame" x="51" y="0.0" width="44" height="44"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <state key="normal" title="🙁"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="22"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="1" green="0.0" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="tappedWithButton:" destination="Esd-Td-eBD" eventType="touchUpInside" id="uMk-cE-qAR"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsT-rl-00S">
+                                                    <rect key="frame" x="102" y="0.0" width="44" height="44"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <state key="normal" title="😐"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="22"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="1" green="0.0" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="tappedWithButton:" destination="Esd-Td-eBD" eventType="touchUpInside" id="Pxx-Pf-If4"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rB0-Kv-pTf">
+                                                    <rect key="frame" x="153" y="0.0" width="44" height="44"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <state key="normal" title="🙂"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="22"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="1" green="0.0" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="tappedWithButton:" destination="Esd-Td-eBD" eventType="touchUpInside" id="hMg-cy-lME"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ovh-tq-wtU">
+                                                    <rect key="frame" x="204.00000000000003" y="0.0" width="44" height="44"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <state key="normal" title="😍"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="22"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="1" green="0.0" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="tappedWithButton:" destination="Esd-Td-eBD" eventType="touchUpInside" id="ejc-PQ-SFI"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UrN-kQ-RgP">
+                                            <rect key="frame" x="0.0" y="135.99999999999997" width="280" height="44"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNe-Uo-pPG">
+                                                    <rect key="frame" x="0.0" y="5.3333333333333712" width="140" height="33"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <state key="normal" title="Cancel"/>
+                                                    <connections>
+                                                        <action selector="closeTapped" destination="Esd-Td-eBD" eventType="touchUpInside" id="vL8-qt-fFv"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7D-ZN-jcP">
+                                                    <rect key="frame" x="140" y="5.3333333333333712" width="140" height="33"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <state key="normal" title="Submit"/>
+                                                    <connections>
+                                                        <action selector="submitTapped" destination="Esd-Td-eBD" eventType="touchUpInside" id="6mm-30-9j9"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="pJ9-Kx-1TS"/>
+                                            </constraints>
+                                        </stackView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDq-bO-F0J">
+                                            <rect key="frame" x="0.0" y="135.99999999999997" width="280" height="1"/>
+                                            <color key="backgroundColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="kCu-59-1bW">
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="pixelValue">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </constraint>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmW-LU-aTE">
+                                            <rect key="frame" x="139.33333333333334" y="135.99999999999997" width="1" height="44"/>
+                                            <color key="backgroundColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="1" id="VBu-aD-UI9">
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="pixelValue">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </constraint>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="yuk-6c-cwt" firstAttribute="top" secondItem="RgG-Nx-UI6" secondAttribute="top" constant="20" id="Dzm-tA-tcR"/>
+                                        <constraint firstItem="dmW-LU-aTE" firstAttribute="top" secondItem="UrN-kQ-RgP" secondAttribute="top" id="GLe-OL-DNX"/>
+                                        <constraint firstItem="lDq-bO-F0J" firstAttribute="top" secondItem="UrN-kQ-RgP" secondAttribute="top" id="IsX-it-Yb6"/>
+                                        <constraint firstItem="mkS-Vg-Nj0" firstAttribute="centerY" secondItem="RgG-Nx-UI6" secondAttribute="centerY" id="URO-AG-RuB"/>
+                                        <constraint firstItem="dmW-LU-aTE" firstAttribute="centerX" secondItem="UrN-kQ-RgP" secondAttribute="centerX" id="UeU-jn-dd5"/>
+                                        <constraint firstItem="lDq-bO-F0J" firstAttribute="trailing" secondItem="UrN-kQ-RgP" secondAttribute="trailing" id="WiE-xX-1qY"/>
+                                        <constraint firstAttribute="trailing" secondItem="UrN-kQ-RgP" secondAttribute="trailing" id="XXB-Tf-aGM"/>
+                                        <constraint firstItem="yuk-6c-cwt" firstAttribute="centerX" secondItem="RgG-Nx-UI6" secondAttribute="centerX" id="ciy-zQ-cF0"/>
+                                        <constraint firstAttribute="bottom" secondItem="UrN-kQ-RgP" secondAttribute="bottom" id="ePd-sv-8zu"/>
+                                        <constraint firstItem="mkS-Vg-Nj0" firstAttribute="centerX" secondItem="RgG-Nx-UI6" secondAttribute="centerX" id="g5S-mu-tzA"/>
+                                        <constraint firstItem="UrN-kQ-RgP" firstAttribute="leading" secondItem="RgG-Nx-UI6" secondAttribute="leading" id="gK6-jM-8U8"/>
+                                        <constraint firstItem="lDq-bO-F0J" firstAttribute="leading" secondItem="UrN-kQ-RgP" secondAttribute="leading" id="k25-uQ-Ldb"/>
+                                        <constraint firstItem="dmW-LU-aTE" firstAttribute="bottom" secondItem="UrN-kQ-RgP" secondAttribute="bottom" id="uhU-VW-d1R"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="DkN-cu-IAC"/>
+                                    <constraint firstAttribute="width" constant="280" id="uBN-WW-qzv"/>
+                                </constraints>
+                                <blurEffect style="extraLight"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5co-ry-jOG" firstAttribute="height" secondItem="hgo-Sz-suk" secondAttribute="height" multiplier="2" id="08Q-ny-bIn"/>
+                            <constraint firstAttribute="bottom" secondItem="5co-ry-jOG" secondAttribute="bottom" id="7bL-10-VMh"/>
+                            <constraint firstAttribute="trailing" secondItem="5co-ry-jOG" secondAttribute="trailing" id="LVw-GH-3ya"/>
+                            <constraint firstItem="XZY-NE-ydP" firstAttribute="centerX" secondItem="2ar-Mt-7ys" secondAttribute="centerX" id="Nkt-LV-B0y"/>
+                            <constraint firstItem="5co-ry-jOG" firstAttribute="leading" secondItem="hgo-Sz-suk" secondAttribute="leading" id="RAz-3W-P0I"/>
+                            <constraint firstItem="XZY-NE-ydP" firstAttribute="centerY" secondItem="2ar-Mt-7ys" secondAttribute="bottom" multiplier="0.4" id="pa1-mI-qBB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2ar-Mt-7ys"/>
+                    </view>
+                    <connections>
+                        <outlet property="fadeView" destination="5co-ry-jOG" id="btS-eI-yDS"/>
+                        <outlet property="submitButton" destination="U7D-ZN-jcP" id="lbF-kK-L8z"/>
+                        <outletCollection property="buttons" destination="vaB-bX-EMd" collectionClass="NSMutableArray" id="hB5-FR-YKD"/>
+                        <outletCollection property="buttons" destination="Bhd-gs-f2m" collectionClass="NSMutableArray" id="4dD-a2-LEC"/>
+                        <outletCollection property="buttons" destination="JsT-rl-00S" collectionClass="NSMutableArray" id="e60-Ej-Jw6"/>
+                        <outletCollection property="buttons" destination="rB0-Kv-pTf" collectionClass="NSMutableArray" id="BYi-e9-HP0"/>
+                        <outletCollection property="buttons" destination="Ovh-tq-wtU" collectionClass="NSMutableArray" id="Zoo-oZ-v0s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z1P-eE-G6y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="1094"/>
+        </scene>
+    </scenes>
+</document>
